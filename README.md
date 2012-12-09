@@ -19,10 +19,11 @@ Other Countly SDK repositories;
 
 Installing Countly BlackBerry WebWorks SDK is very easy. First you need to 
 add some tags to your config.xml file (as shown below), to reach the phone's 
-private data; such as PIN number, OS version etc.
+private data; such as PIN number, OS version etc. Use your server URL below instead of cloud.count.ly 
+if you are hosting your own Countly server.
 
 <pre class="prettyprint">
-&lt;access uri="http://demo.count.ly" subdomains="true" /&gt;
+&lt;access uri="http://cloud.count.ly" subdomains="true" /&gt;
 &lt;feature id="blackberry.identity" /&gt;
 &lt;feature id="blackberry.system" /&gt;
 &lt;feature id="blackberry.app" /&gt;
