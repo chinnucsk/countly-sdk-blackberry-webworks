@@ -76,6 +76,8 @@ All you need to do is defining your event, nothing more. You don't need to care 
 things like ending your session or closing link with Countly server. Your Countly BlackBerry WebWorks SDK 
 does the heavy work for you.
 
+##Known issues
+It's not possible to retrieve carrier name using BB SDK for WebWorks, so this code always returns "Carrier" for carrier name.
 
 ##How can I help you with your efforts?
 Glad you asked. We need ideas, feedbacks and constructive comments. All your suggestions will be taken care with upmost importance. 
