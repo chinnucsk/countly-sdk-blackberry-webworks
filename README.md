@@ -22,11 +22,11 @@ add some tags to your config.xml file (as shown below), to reach the phone's
 private data; such as PIN number, OS version etc.
 
 <pre class="prettyprint">
-<access uri="http://demo.count.ly" subdomains="true" />
-<feature id="blackberry.identity" />
-<feature id="blackberry.system" />
-<feature id="blackberry.app" />
-<feature id="blackberry.app.event" />
+&lt;access uri="http://demo.count.ly" subdomains="true" /&gt;
+&lt;feature id="blackberry.identity" /&gt;
+&lt;feature id="blackberry.system" /&gt;
+&lt;feature id="blackberry.app" /&gt;
+&lt;feature id="blackberry.app.event" /&gt;
 </pre>
 
 
@@ -35,10 +35,10 @@ After that, Include the jQuery library and CountlyApi.js as shown below to your 
 which you defined as content src in your config.xml file.
 
 <pre class="prettyprint">
-<head>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="CountlyApi.js"></script>
-</head>
+&lt;head&gt;
+    &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="CountlyApi.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 </pre>
 
 Next, define your countly server url and your app_key before you initiliaze your 
