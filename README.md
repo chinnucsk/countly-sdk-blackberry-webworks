@@ -21,60 +21,59 @@ Installing Countly BlackBerry WebWorks SDK is very easy. First you need to
 add some tags to your config.xml file (as shown below), to reach the phone's 
 private data; such as PIN number, OS version etc.
 
-/* code */
+<pre class="prettyprint">
 <access uri="http://demo.count.ly" subdomains="true" />
 <feature id="blackberry.identity" />
 <feature id="blackberry.system" />
 <feature id="blackberry.app" />
 <feature id="blackberry.app.event" />
-/* end code */
+</pre>
+
 
 Then you just need to copy jQuery library and CountlyApi.js to your project path. 
 After that, Include the jQuery library and CountlyApi.js as shown below to your html file; 
 which you defined as content src in your config.xml file.
 
-/* code */
+<pre class="prettyprint">
 <head>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="CountlyApi.js"></script>
 </head>
-/* end code */
+</pre>
 
 Next, define your countly server url and your app_key before you initiliaze your 
 Countly BlackBerry WebWorks SDK, as shown below.
 
-/* code */
+<pre class="prettyprint">
 countly.setURL('http://cloud.count.ly') ;
 countly.setAppKey('YOUR_APP_KEY');
-/* end code */
+</pre>
 
 PS: In the URL part above, use your server URL if you are hosting your own Countly server.
 
 Now you are ready to initialize your Countly BlackBerry WebWorks SDK (as shown below). 
 
-/* code */
+<pre class="prettyprint">
 countly.init();
-/* end code */
+</pre>
 
 When Countly BlackBerry WebWorks SDK initializes, it will start session and send your phone 
 data to the Countly server automatically. Now just you need to do is define your special events (shown below).
 
-/* code */
+<pre class="prettyprint">
 countly.eventSender('testevent');
 countly.eventSender('testevent', 1.3, {'mykey' : 'myvalue'});
-/* end code */
+</pre>
 
 In the first example the eventSender method just creates an event named 'testevent' and 
 sends that event to the server if the loop size and session duration conditions are satisfied.
 In the second example; we are giving some specific information about our event, such 
 as 'sum' and 'segment'. If you want to learn more about these optional parameters, 
-you can check out the url below.
-
-http://support.count.ly/kb/reference/Countly-server-api-reference
+[http://support.count.ly/kb/reference/Countly-server-api-reference](you can check out this address).
 
 All you need to do is defining your event, nothing more. You don't need to care about 
-things like, ending your session or closing link with Countly server. 
-Your Countly BlackBerry WebWorks SDK does the work for you.
+things like ending your session or closing link with Countly server. Your Countly BlackBerry WebWorks SDK 
+does the heavy work for you.
 
 
 ##How can I help you with your efforts?
