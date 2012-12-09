@@ -135,25 +135,6 @@ var countly = {
 
 	findCarrier : function() {
 		operator = blackberry.identity.IMSI.substring(0,5);
-		if (operator == '28601')
-		{
-			return 'Turkcell';
-		}
-		else if (operator == '28602')
-		{
-			return 'Vodafone';
-		}
-		else if (operator == '28603')
-		{
-			return 'Avea';
-		}
-		else if (operator == '31015')
-		{
-			return 'Ripple Operator';
-		}
-		else
-		{
-			return 'Unknown Operator';
-		}
+		return 'Unknown Operator';
 	}
 };
