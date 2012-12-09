@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>count.ly test</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="countlyApi.js"></script>
+<script type="text/javascript">
+//sample countly sdk usage
+countly.setURL('http://demo.count.ly') ;
+countly.setAppKey('79f0f5596480beaf8e4865b6640be53efe18112b');
+countly.init();
+countly.eventSender('testevent');
+countly.eventSender('testevent', 1.3, {'mykey' : 'myvalue'});
+countly.eventSender('testevent', 1.9, {'mykey2' : 'myvalue2'});
+countly.eventSender('testevent', 3.1, {'mykey3' : 'myvalue3'});
+countly.eventSender('eventtest');
+countly.eventSender('eventtest', 0.3, {'rmykey' : 'rmyvalue'});
+countly.eventSender('eventtest', 0.7, {'rmykey2' : 'rmyvalue2'});
+countly.eventSender('eventtest', 0.1, {'rmykey3' : 'rmyvalue3'});
+</script>
+</head>
+<body>
+	<p>Countly BlackBerry</p>
+</body>
+</html>
