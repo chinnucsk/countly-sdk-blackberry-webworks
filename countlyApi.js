@@ -135,6 +135,6 @@ var countly = {
 
 	findCarrier : function() {
 		operator = blackberry.identity.IMSI.substring(0,5);
-		return 'Unknown Operator';
+		return 'Carrier';
 	}
 };
