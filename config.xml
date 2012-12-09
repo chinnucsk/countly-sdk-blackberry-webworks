@@ -13,7 +13,7 @@
 <rim:orientation mode="auto"/>
 <content src="index.html"></content>
 <access uri="*" subdomains="true" />
-<access uri="http://demo.count.ly" subdomains="true" />
+<access uri="http://cloud.count.ly" subdomains="true" />
 <feature id="blackberry.identity" />
 <feature id="blackberry.identity.phone" /> 
 <feature id="blackberry.system" />
