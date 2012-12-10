@@ -6,14 +6,15 @@ mobile application usage and end-user behavior. There are two parts of Countly:
 the server that collects and analyzes data, and mobile SDK that sends this data 
 (for iOS, Android and Blackberry). Both parts are open source.
 
-Countly Server;
+Countly Server source code:
 
 - [Countly Server (countly-server)](https://github.com/Countly/countly-server)
 
-Other Countly SDK repositories;
+Other Countly SDK repositories:
 
 - [Countly iOS SDK (countly-sdk-ios)](https://github.com/Countly/countly-sdk-ios)
 - [Countly Android SDK (countly-sdk-android)](https://github.com/Countly/countly-sdk-android)
+- [Countly Windows Phone SDK (countly-sdk-windows-phone)](https://github.com/Countly/countly-sdk-windows-phone)
 
 ##Installing Countly BlackBerry WebWorks SDK
 
