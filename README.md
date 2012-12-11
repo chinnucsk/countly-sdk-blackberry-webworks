@@ -6,6 +6,8 @@ mobile application usage and end-user behavior. There are two parts of Countly:
 the server that collects and analyzes data, and mobile SDK that sends this data 
 (for iOS, Android, Windows Phone and Blackberry). Both parts are open source.
 
+This repository includes the SDK for Blackberry WebWorks.
+
 ##Installing Countly BlackBerry WebWorks SDK
 
 Installing Countly BlackBerry WebWorks SDK is very easy. First you need to 
