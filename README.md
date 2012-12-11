@@ -71,7 +71,7 @@ does the heavy work for you.
 
 Check Countly Server source code here: 
 
-- [Countly Server (countly-server)](https://github.com/Countly/countly-server)
+- [Countly Server](https://github.com/Countly/countly-server)
 
 There are also other Countly SDK repositories below:
 
