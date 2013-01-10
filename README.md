@@ -81,6 +81,7 @@ There are also other Countly SDK repositories below:
 - [Countly Blackberry Webworks SDK](https://github.com/Countly/countly-sdk-blackberry-webworks)
 - [Countly Mac OS X SDK](https://github.com/mrballoon/countly-sdk-osx) (Community supported)
 - [Countly Appcelerator Titanium SDK](https://github.com/euforic/Titanium-Count.ly) (Community supported)
+- [Countly Unity3D SDK](https://github.com/Countly/countly-sdk-unity) (Community supported)
 
 ##Known issues
 It's not possible to retrieve carrier name using BB SDK for WebWorks, so this code always returns "Carrier" for carrier name.
