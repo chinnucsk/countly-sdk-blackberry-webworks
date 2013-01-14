@@ -11,8 +11,10 @@
 
  function ready() {
          
-         countly.setURL('http://demo.count.ly') ;
-         countly.setAppKey('79f0f5596480beaf8e4865b6640be53efe18112b');
+//set SERVER_NAME=cloud.count.ly if you are using Countly Cloud. 
+
+         countly.setURL('https://YOUR_SERVER_NAME') ;
+         countly.setAppKey('YOUR_APP_KEY');
          countly.init();
          
          var ele = document.createElement("div");
