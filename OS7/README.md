@@ -15,7 +15,7 @@ private data; such as PIN number, OS version etc. Use your server URL below inst
 if you are hosting your own Countly server.
 
 <pre class="prettyprint">
-&lt;access uri="http://cloud.count.ly" subdomains="true" /&gt;
+&lt;access uri="https://cloud.count.ly" subdomains="true" /&gt;
 &lt;feature id="blackberry.identity" /&gt;
 &lt;feature id="blackberry.system" /&gt;
 &lt;feature id="blackberry.app" /&gt;
