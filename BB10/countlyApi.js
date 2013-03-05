@@ -170,6 +170,6 @@ var countly = {
 		// 	return 'Unknown Operator';
 		// }
 
-		return "Unknow Operator";
+		return "Unknown Operator";
 	}
 };
