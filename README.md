@@ -22,6 +22,15 @@ if you are hosting your own Countly server.
 &lt;feature id="blackberry.app.event" /&gt;
 </pre>
 
+In the same file (config.xml), you need to specify the following permission:
+
+<pre class="prettyprint">
+&lt;rim:permissions&gt; 
+&lt;rim:permit&gt;read_device_identifying_information&lt;/rim:permit&gt;
+&lt;/rim:permissions&gt;
+</pre>
+
+This allows the UUID to be read and passed to your analytics. 
 
 Then you just need to copy jQuery library and CountlyApi.js to your project path. 
 After that, Include the jQuery library and CountlyApi.js as shown below to your html file; 
