@@ -133,10 +133,22 @@ var countly = {
 	},
 	
 	request : function(url) {
-		$.ajax({
-			url: url,
-			dataType: 'jsonp'
-		});
+		// Delete allready existing JSONP scripts
+		var scripts = document.getElementsByTagName("script");
+		for (i=0; i<scripts.length; i++) {
+		var id = scripts[i].getAttribute("id");
+		if(!id) continue;
+		if(id == "JSONP") {
+		scripts[i].parentNode.removeChild(scripts[i]);
+		}
+		}
+
+		// Creation and insertion of new script
+		var script = document.createElement("script");
+		script.setAttribute("src", url);
+		script.setAttribute("id", "JSONP")
+		script.setAttribute("type", "text/javascript");
+		document.getElementsByTagName("head")[0].appendChild(script);
 	},
 	
 	startTimer : function() {
