@@ -136,11 +136,11 @@ var countly = {
 		// Delete allready existing JSONP scripts
 		var scripts = document.getElementsByTagName("script");
 		for (i=0; i<scripts.length; i++) {
-		var id = scripts[i].getAttribute("id");
-		if(!id) continue;
-		if(id == "JSONP") {
-		scripts[i].parentNode.removeChild(scripts[i]);
-		}
+			var id = scripts[i].getAttribute("id");
+			if(!id) continue;
+			if(id == "JSONP") {
+				scripts[i].parentNode.removeChild(scripts[i]);
+			}
 		}
 
 		// Creation and insertion of new script
